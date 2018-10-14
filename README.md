@@ -67,3 +67,28 @@ git reset HEAD -- <file>
 git rm <file>
 git commit -m "本次提交的说明"
 ```
+> 远程仓库
+
+```bash
+//添加远程仓库
+//origin是远程仓库的默认名称可更改
+git remote add origin git@github.com:<github_username>/<repository>
+
+//第一次推送加上-u参数, Git会将本地 master 分支和远程 master 分支关联起来, 以后在推送时可简化命令
+git push -u origin master
+
+//将远程仓库中的改动同步到本地
+git pull
+```
+
+> 分支
+
+```bash
+//创建分支, 并且切换到该分支
+git branch <branch>
+git checkout <branch>
+//-b参数相当于上面两条命令
+git checkout -b <branch>
+
+
+```
