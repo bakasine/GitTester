@@ -90,5 +90,11 @@ git checkout <branch>
 //-b参数相当于上面两条命令
 git checkout -b <branch>
 
+//合并指定分支到当前分支
+git merge <branch>
+
+//删除分支
+git branch -d <branch>
 
 ```
+
