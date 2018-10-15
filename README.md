@@ -79,6 +79,9 @@ git push -u origin master
 
 //将远程仓库中的改动同步到本地
 git pull
+
+//将远程仓库的文件clone到本地
+git clone <URL>
 ```
 
 > 分支
@@ -95,6 +98,7 @@ git merge <branch>
 
 //删除分支
 git branch -d <branch>
-
 ```
+
+
 
