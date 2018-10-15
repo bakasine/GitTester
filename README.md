@@ -161,7 +161,7 @@ git push origin <tag-name>
 ```bash
 //将命令名用一个<new-name>代替作为别名
 //--global参数使该命令作用在当前用户, 如不加则只针对当前仓库
-git config --global alias.<new-name> <old-name>
+git config --global alias.<new-name> 'old-name'
 //也可通过修改.git/config文件
 //在[alias]后面添加
 <new-name> = <old-name>
