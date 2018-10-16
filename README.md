@@ -179,9 +179,13 @@ Git为我们提供了.gitignore文件，此文件专门来做忽略，只要在�
 
 如希望.gitignore文件作用于所有工作目录, 不希望每次都要在工作目录添加.gitignore文件
 
-```bash
+```
 在用户文件夹下创建.gitconfig_global并写入规则
+如果无法创建空文件名
+直接创建 .gitignore_global. 文件, 系统提示"如果改变文件扩展名，可能会导致文件不可用。确实要更改吗？"选择确定即可
+```
 
+```bash
 在用户文件夹(Users/用户名/)下修改.gitconfig配置, 在[core]下添加
 excludesfile = 用户文件夹\\.gitconfig_global
 
