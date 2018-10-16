@@ -169,3 +169,24 @@ git config --global alias.<new-name> 'old-name'
 //删除别名
 //直接修改.git/config文件
 ```
+
+> 忽略特殊文件
+
+
+Git为我们提供了.gitignore文件，此文件专门来做忽略，只要在此文件中设置你想忽略的内容就可以了。
+不需要从头写.gitignore文件，GitHub已经为我们准备了各种配置文件，只需要组合一下就可以使用了。
+所有配置文件可以直接在线浏览：https://github.com/github/gitignore
+
+如希望.gitignore文件作用于所有工作目录, 不希望每次都要在工作目录添加.gitignore文件
+
+```bash
+在用户文件夹下创建.gitconfig_global并写入规则
+
+在用户文件夹(Users/用户名/)下修改.gitconfig配置, 在[core]下添加
+excludesfile = 用户文件夹\\.gitconfig_global
+
+也可以使用Git命令进行设置
+git config --global core.excludesfile ~/.gitconfig_global
+
+最后可以通过git config --list查看是否设置成功
+```
